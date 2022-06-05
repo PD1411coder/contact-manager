@@ -1,12 +1,16 @@
 import React from 'react'
 
 import { FileUploader } from "react-drag-drop-files";
+import './Aside.css'
 
 
 const fileTypes = ["CSV"];
 
 const ImportContact = ({uploadData, setIsAlert, setIsUpload}) => {
+const style = {height: "84%",
+    width:"40%"
 
+}
 
     
     const onDrop = async(file) => {
@@ -39,7 +43,7 @@ const ImportContact = ({uploadData, setIsAlert, setIsUpload}) => {
 
   return (
     <div className='import'>
-      <FileUploader handleChange={onDrop} types={fileTypes} name="file" />
+      <FileUploader handleChange={onDrop} types={fileTypes} name="file"  style={style}/>
     </div>
   )
 }

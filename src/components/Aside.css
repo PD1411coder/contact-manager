@@ -344,6 +344,19 @@ img.dashboard {
         border-radius: 10px;
 }
 
+.fileuploader{
+    height: 12rem;
+    position: absolute;
+    top: calc(50% - 1rem);
+    left: calc(50% - 1rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+
+}
+
 .popdiv {
     display: flex;
     width: 100%;
@@ -382,3 +395,5 @@ label.sc-bczRLJ.kiHXWb {
     max-width: 100%;
    
 }
+
+
