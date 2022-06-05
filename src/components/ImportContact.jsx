@@ -42,10 +42,15 @@ const style = {height: "84%",
     }
 
   return (
-    <div className='import'>
-      <FileUploader handleChange={onDrop} types={fileTypes} name="file"  style={style}/>
+    <div className="fileuploader">
+      <FileUploader
+        handleChange={onDrop}
+        types={fileTypes}
+        name="file"
+        style={style}
+      />
     </div>
-  )
+  );
 }
 
 export default ImportContact;
