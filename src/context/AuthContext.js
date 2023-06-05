@@ -127,7 +127,7 @@ export const AuthContextProvider = ({ children }) => {
   const loginUser = async (userData) => {
     try {
       const res = await fetch(
-        `https://contacts-manager-g1.herokuapp.com/api/login`,
+        `https://contacts-manager-backend-two.vercel.app/api/login`,
         {
           method: "POST",
           headers: {
@@ -160,7 +160,7 @@ export const AuthContextProvider = ({ children }) => {
   const signupUser = async (userData) => {
     try {
       const res = await fetch(
-        `https://contacts-manager-g1.herokuapp.com/api/signup`,
+        `https://contacts-manager-backend-two.vercel.app/api/signup`,
         {
           method: "POST",
           headers: {
